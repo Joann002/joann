@@ -1,0 +1,44 @@
+{
+  "technologies": [
+    {
+      "name": "Laravel",
+      "image": "/img/technologies/Laravel-Logo.wine.png"
+    },
+    {
+      "name": "Node.js",
+      "image": "/img/technologies/nodejs.png"
+    },
+    {
+      "name": "PHP",
+      "image": "/img/technologies/php.png"
+    },
+    {
+      "name": "MySQL",
+      "image": "/img/technologies/mysql.png"
+    },
+    {
+      "name": "Git",
+      "image": "/img/technologies/git.png"
+    },
+    {
+      "name": "Docker",
+      "image": "/img/technologies/docker.png"
+    },
+    {
+      "name": "TypeScript",
+      "image": "/img/technologies/typescript.png"
+    },
+    {
+      "name": "Tailwind CSS",
+      "image": "/img/technologies/tailwind.png"
+    },
+    {
+      "name": "Next.js",
+      "image": "/img/technologies/nextjs.png"
+    },
+    {
+      "name": "MongoDB",
+      "image": "/img/technologies/mongodb.png"
+    }
+  ]
+} 
