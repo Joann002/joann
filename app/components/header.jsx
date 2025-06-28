@@ -17,7 +17,7 @@ export function Header() {
               height={40}
               className="rounded-full"
             />
-            <span className="ml-2 text-xl font-bold">Ton Nom</span>
+            <span className="ml-2 text-xl font-bold">Joann Michel</span>
           </div>
 
           {/* Theme Toggle */}
