@@ -13,7 +13,7 @@ export default function Home() {
           {/* Titre Principal */}
           <div className="text-center mb-16 space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Joann Michel RAZAFINIMANANA
+              Joann Michel
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground">
               Développeur Full Stack
