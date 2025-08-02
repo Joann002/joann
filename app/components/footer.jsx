@@ -11,11 +11,11 @@ export function Footer() {
           <div className="flex flex-wrap gap-6 justify-center md:justify-start">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <a href="mailto:ton@email.com" className="hover:underline hover:text-gradient transition-colors">joannrazafinimanana159@gmail.com</a>
+              <a href="mailto:joannrazafinimanana159@gmail.com" className="hover:underline hover:text-gradient transition-colors">joannrazafinimanana159@gmail.com</a>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <a href="tel:+33600000000" className="hover:underline hover:text-gradient transition-colors">+261 34 76 566 38</a>
+              <a href="tel:+261347656638" className="hover:underline hover:text-gradient transition-colors">+261 34 76 566 38</a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
@@ -28,7 +28,7 @@ export function Footer() {
             <a href="https://github.com/Joann002" target="_blank" rel="noopener noreferrer" className="hover:text-gradient transition-colors">
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com/in/ton-username" target="_blank" rel="noopener noreferrer" className="hover:text-gradient transition-colors">
+            <a href="https://linkedin.com/in/joann-razafinimanana" target="_blank" rel="noopener noreferrer" className="hover:text-gradient transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
