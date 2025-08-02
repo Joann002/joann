@@ -2,7 +2,7 @@
   "technologies": [
     {
       "name": "Laravel",
-      "image": "/img/technologies/Laravel-Logo.wine.png"
+      "image": "/img/technologies/Laravel.png"
     },
     {
       "name": "Node.js",
@@ -30,11 +30,11 @@
     },
     {
       "name": "Tailwind CSS",
-      "image": "/img/technologies/tailwind.png"
+      "image": "/img/technologies/tailwind-css.png"
     },
     {
       "name": "Next.js",
-      "image": "/img/technologies/nextjs.png"
+      "image": "/img/technologies/Next.js.png"
     },
     {
       "name": "MongoDB",
