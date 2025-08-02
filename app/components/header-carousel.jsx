@@ -19,9 +19,9 @@ const profileInfo = [
     qualities: ["Créatif", "Autonome", "Rigoureux"],
     strengths: ["React", "Node.js", "TypeScript"],
     links: [
-      { icon: Github, url: "https://github.com/ton-username", label: "GitHub" },
-      { icon: Linkedin, url: "https://linkedin.com/in/ton-username", label: "LinkedIn" },
-      { icon: Mail, url: "mailto:ton@email.com", label: "Email" }
+      { icon: Github, url: "https://github.com/Joann002", label: "GitHub" },
+      { icon: Linkedin, url: "https://linkedin.com/in/Joann-razafinimanana", label: "LinkedIn" },
+      { icon: Mail, url: "mailto:joannrazafinimanana159@gmail.com", label: "Email" }
     ]
   },
   {
@@ -31,9 +31,9 @@ const profileInfo = [
     qualities: ["Minutieux", "Innovant", "Collaboratif"],
     strengths: ["Figma", "Adobe XD", "Prototypage"],
     links: [
-      { icon: Github, url: "https://github.com/ton-username", label: "Portfolio" },
-      { icon: Linkedin, url: "https://linkedin.com/in/ton-username", label: "LinkedIn" },
-      { icon: Mail, url: "mailto:ton@email.com", label: "Email" }
+      { icon: Github, url: "https://github.com/Joann002", label: "Portfolio" },
+      { icon: Linkedin, url: "https://linkedin.com/in/Joann-razafinimanana", label: "LinkedIn" },
+      { icon: Mail, url: "mailto:joannrazafinimanana159@gmail.com", label: "Email" }
     ]
   },
   {
@@ -43,9 +43,9 @@ const profileInfo = [
     qualities: ["Analytique", "Stratégique", "Leader"],
     strengths: ["Architecture Cloud", "Microservices", "DevOps"],
     links: [
-      { icon: Github, url: "https://github.com/ton-username", label: "GitHub" },
-      { icon: Linkedin, url: "https://linkedin.com/in/ton-username", label: "LinkedIn" },
-      { icon: Mail, url: "mailto:ton@email.com", label: "Email" }
+      { icon: Github, url: "https://github.com/Joann002", label: "GitHub" },
+      { icon: Linkedin, url: "https://linkedin.com/in/Joann-razafinimanana", label: "LinkedIn" },
+      { icon: Mail, url: "mailto:joannrazafinimanana159@gmail.com", label: "Email" }
     ]
   }
 ]

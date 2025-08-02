@@ -28,7 +28,7 @@ export function Footer() {
             <a href="https://github.com/Joann002" target="_blank" rel="noopener noreferrer" className="hover:text-gradient transition-colors">
               <Github className="w-5 h-5" />
             </a>
-            <a href="https://linkedin.com/in/joann-razafinimanana" target="_blank" rel="noopener noreferrer" className="hover:text-gradient transition-colors">
+            <a href="https://linkedin.com/in/Joann-razafinimanana" target="_blank" rel="noopener noreferrer" className="hover:text-gradient transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
