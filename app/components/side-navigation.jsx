@@ -80,8 +80,19 @@ export function SideNavigation() {
           top: 0,
           behavior: 'smooth'
         })
-      } else if (sectionId === "technologies" || sectionId === "presentation") {
-        // Pour les sections technologies et presentation, centrer au milieu de la page
+      } else if (sectionId === "presentation") {
+        // Pour la section présentation, centrer au milieu de la page
+        const windowHeight = window.innerHeight
+        const elementTop = element.offsetTop
+        const elementHeight = element.offsetHeight
+        const targetScroll = elementTop - (windowHeight / 2) + (elementHeight / 2)
+        
+        window.scrollTo({
+          top: targetScroll,
+          behavior: 'smooth'
+        })
+      } else if (sectionId === "technologies") {
+        // Pour la section technologies, centrer au milieu de la page
         const windowHeight = window.innerHeight
         const elementTop = element.offsetTop
         const elementHeight = element.offsetHeight
