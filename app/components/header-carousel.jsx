@@ -1,13 +1,5 @@
 "use client"
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail } from "lucide-react"
 
@@ -47,42 +39,62 @@ const profileInfo = [
       { icon: Linkedin, url: "https://linkedin.com/in/Joann-razafinimanana", label: "LinkedIn" },
       { icon: Mail, url: "mailto:joannrazafinimanana159@gmail.com", label: "Email" }
     ]
+  },
+  {
+    id: 4,
+    title: "Développeur Mobile",
+    description: "Spécialisé dans le développement d'applications mobiles natives et cross-platform avec une approche moderne.",
+    qualities: ["Adaptatif", "Innovant", "Déterminé"],
+    strengths: ["React Native", "Flutter", "Swift"],
+    links: [
+      { icon: Github, url: "https://github.com/Joann002", label: "GitHub" },
+      { icon: Linkedin, url: "https://linkedin.com/in/Joann-razafinimanana", label: "LinkedIn" },
+      { icon: Mail, url: "mailto:joannrazafinimanana159@gmail.com", label: "Email" }
+    ]
+  },
+  {
+    id: 5,
+    title: "Expert DevOps",
+    description: "Spécialisé dans l'automatisation, le déploiement continu et l'optimisation des infrastructures cloud.",
+    qualities: ["Organisé", "Efficace", "Proactif"],
+    strengths: ["Docker", "Kubernetes", "AWS"],
+    links: [
+      { icon: Github, url: "https://github.com/Joann002", label: "GitHub" },
+      { icon: Linkedin, url: "https://linkedin.com/in/Joann-razafinimanana", label: "LinkedIn" },
+      { icon: Mail, url: "mailto:joannrazafinimanana159@gmail.com", label: "Email" }
+    ]
   }
 ]
 
 export function HeaderCarousel() {
   return (
-    <div className="relative w-full flex flex-col md:flex-row items-center justify-center min-h-[400px] py-8 gap-8">
-      {/* Colonne gauche : Carousel de profil */}
-      <div className="flex-1 flex items-center justify-center w-full">
-        <Carousel 
-          className="w-full max-w-xl" 
-          style={{ position: "static !important" }}
-          opts={{
-            loop: true,
-            align: "start",
-            dragFree: true,
-            containScroll: "trimSnaps",
-            autoplay: {
-              delay: 5000,
-              disableOnInteraction: false,
-            },
-          }}
-        >
-          <CarouselContent>
-            {profileInfo.map((item) => (
-              <CarouselItem key={item.id} className="flex flex-col items-center justify-center min-h-[400px] gap-4 px-4">
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground text-center drop-shadow-lg">
+    <div className="relative w-full py-24">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-16">
+          {profileInfo.map((item, index) => (
+            <article 
+              key={item.id} 
+              className={`relative bg-gradient-card rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-0 hover-glow ${
+                index === 0 ? 'md:col-start-1 lg:col-start-1 lg:translate-y-0' : 
+                index === 1 ? 'md:col-start-3 lg:col-start-3 lg:translate-y-0' : 
+                index === 2 ? 'md:col-start-2 lg:col-start-2 lg:translate-y-8' :
+                index === 3 ? 'md:col-start-1 lg:col-start-1 lg:translate-y-16' :
+                'md:col-start-3 lg:col-start-3 lg:translate-y-16'
+              }`}
+            >
+              <div className="space-y-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-gradient text-center">
                   {item.title}
                 </h2>
-                <p className="text-base md:text-lg text-muted-foreground text-center max-w-md">
+                
+                <p className="text-base text-muted-foreground text-center leading-relaxed">
                   {item.description}
                 </p>
                 
                 {/* Qualités */}
                 <div className="flex flex-wrap gap-2 justify-center">
-                  {item.qualities.map((quality, index) => (
-                    <span key={index} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
+                  {item.qualities.map((quality, qualityIndex) => (
+                    <span key={qualityIndex} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
                       {quality}
                     </span>
                   ))}
@@ -90,21 +102,21 @@ export function HeaderCarousel() {
 
                 {/* Points forts */}
                 <div className="flex flex-wrap gap-2 justify-center">
-                  {item.strengths.map((strength, index) => (
-                    <span key={index} className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm">
+                  {item.strengths.map((strength, strengthIndex) => (
+                    <span key={strengthIndex} className="px-3 py-1 bg-gradient-accent text-secondary-foreground rounded-full text-sm font-medium">
                       {strength}
                     </span>
                   ))}
                 </div>
 
                 {/* Liens */}
-                <div className="flex flex-wrap gap-3 mt-2 justify-center">
-                  {item.links.map((link, index) => (
+                <div className="flex flex-wrap gap-3 justify-center pt-2">
+                  {item.links.map((link, linkIndex) => (
                     <Button
-                      key={index}
+                      key={linkIndex}
                       variant="outline"
                       size="sm"
-                      className="gap-2"
+                      className="gap-2 hover:bg-gradient-accent"
                       asChild
                     >
                       <a href={link.url} target="_blank" rel="noopener noreferrer">
@@ -114,23 +126,9 @@ export function HeaderCarousel() {
                     </Button>
                   ))}
                 </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="absolute w-full flex justify-between px-4">
-            <CarouselPrevious className="left-0" />
-            <CarouselNext className="right-0" />
-          </div>
-        </Carousel>
-      </div>
-      {/* Colonne droite : Photo fixe */}
-      <div className="flex-1 flex items-center justify-center w-full md:w-auto">
-        <div className="relative overflow-hidden shadow-lg border-4 border-background bg-background">
-          <img
-            src="/img/pexels-moh-adbelghaffar-771742.jpg"
-            alt="Ma photo"
-            style={{ width: "275px", height: "auto", objectFit: "cover" }}
-          />
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </div>

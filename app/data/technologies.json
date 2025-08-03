@@ -39,6 +39,26 @@
     {
       "name": "MongoDB",
       "image": "/img/technologies/mongodb.png"
+    },
+    {
+      "name": "React",
+      "image": "/img/technologies/React.png"
+    },
+    {
+      "name": "Vue.js",
+      "image": "/img/technologies/Vue.js.png"
+    },
+    {
+      "name": "Python",
+      "image": "/img/technologies/Python.png"
+    },
+    {
+      "name": "AWS",
+      "image": "/img/technologies/aws.png"
+    },
+    {
+      "name": "Kubernetes",
+      "image": "/img/technologies/Kubernetes.png"
     }
   ]
 } 

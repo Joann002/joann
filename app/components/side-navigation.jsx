@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { Home, User, Code, FolderOpen } from "lucide-react"
 
@@ -33,6 +33,37 @@ const navigationItems = [
 
 export function SideNavigation() {
   const [activeSection, setActiveSection] = useState("accueil")
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2
+
+      // Détecter quelle section est au centre de l'écran
+      for (let i = navigationItems.length - 1; i >= 0; i--) {
+        const item = navigationItems[i]
+        const element = document.getElementById(item.id)
+        
+        if (element) {
+          const elementTop = element.offsetTop
+          const elementBottom = elementTop + element.offsetHeight
+          
+          if (scrollPosition >= elementTop && scrollPosition <= elementBottom) {
+            setActiveSection(item.id)
+            break
+          }
+        }
+      }
+
+      // Si on est tout en haut, c'est l'accueil
+      if (window.scrollY < 200) {
+        setActiveSection("accueil")
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll() // Vérifier au chargement initial
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const scrollToSection = (sectionId) => {
     console.log('Scrolling to:', sectionId)
